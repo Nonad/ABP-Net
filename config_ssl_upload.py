@@ -121,7 +121,6 @@ def cfg():
         'SWStest':{'data_dir': "./data/SWS/sws40h"},
         }
 
-# 使用 @ex.config_hook 装饰器定义了一个钩子函数 add_observer，用于在实验中添加文件存储观察者，以便记录实验的输出和结果。
 @ex.config_hook
 def add_observer(config, command_name, logger):
     """A hook fucntion to add observer"""
